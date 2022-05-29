@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background: url("./img/background.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 400px;
+  margin: 100px auto 0;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 40px 30px 35px;
+}
+
+.cf::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.divider {
+  width: 27px;
+  height: 4px;
+  background-color: #d3e6f4;
+}
+.main-city {
+  font-family: Prompt;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #3b8acf;
+  font-size: 48px;
+}
+
+.full-city {
+  text-transform: uppercase;
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.to-city {
+  text-align: right;
+}
+
+/* .ticked {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.ticked-info {
+  width: calc(100% / 3);
+  float: left;
+  text-transform: uppercase;
+}
+
+.ticked-info__desc,
+.user-info__desc {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.ticked-info__num,
+.user-info__name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.all-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.qr,
+.inform {
+  min-width: 50%;
+}
+.qr-img {
+  max-width: 100%;
+}
+
+.user-info:nth-child(2) {
+  margin: 35px 0;
+}
